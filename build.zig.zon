@@ -37,8 +37,8 @@
     // internet connectivity.
     .dependencies = .{
         .cli_craft = .{
-            .url = "https://github.com/SarthakMakhija/cli-craft/archive/3900a7518703d6ab5d0c27eff2b6427e0c7c562f.tar.gz",
-            .hash = "cli_craft-0.0.0-xmcSo5KxBACq2Yed8sK1IgASGGD23R48oUhRyKHfY2XO",
+            .url = "https://github.com/SarthakMakhija/cli-craft/archive/6d1030db84fda7e85a5eb792b1120e358a88f0c3.tar.gz",
+            .hash = "cli_craft-0.0.1-xmcSo822BAAnS44gtHSoddUufSfogw88cr2NsM-0RJry",
         },
     },
     .paths = .{
