@@ -10,19 +10,82 @@ The examples are located within the [src](https://github.com/SarthakMakhija/cli-
 ### Zig version
 This project is built with Zig version **0.14.1**.
 
-### Screenshots
+### Example commands and outputs
 
-| Command  | Screenshot  |
-|---|---|
-| **./cli_craft_examples**  | <img width="400" height="400" alt="Screenshot from 2025-07-20 00-01-51" src="https://github.com/user-attachments/assets/0e587fd0-3389-4811-844a-48fca50794b1" />  |
-| **./cli_craft_examples math**  | <img width="400" height="400" alt="Screenshot from 2025-07-20 00-02-03" src="https://github.com/user-attachments/assets/48baa115-7571-4357-8468-806d264be36c" /> |
-| **./cli_craft_examples math -h**  |  <img width="400" height="400" alt="Screenshot from 2025-07-20 00-02-17" src="https://github.com/user-attachments/assets/83e92979-5bcd-4d42-803d-85d12ce9f6ed" /> |
-| **./cli_craft_examples math add -h** |  <img width="400" height="400" alt="Screenshot from 2025-07-20 00-02-29" src="https://github.com/user-attachments/assets/62613233-8f46-4796-8e1b-0621b5f8cac6" /> |
+1. **No command provided**
 
+```bash
+./cli_craft_examples
 
+Error: No command was provided to execute.
+Usage: [app-name] [command] [flags] [arguments]
 
+Available Commands:
+  arithmetic (math) Performs arithmetic operations
+  help              Displays system help
 
+Global flags:
+  --help, -h Show help for command
+```
 
+2. **No subcommand provided**
+
+```bash
+./cli_craft_examples arithmetic
+
+Error: No subcommand provided for the command 'arithmetic'.
+
+arithmetic - Performs arithmetic operations
+
+Usage: arithmetic [subcommand] [flags] [arguments] 
+
+Aliases:
+ math 
+
+Flags:
+ --help, -h  Show help for command (boolean) 
+
+Available Commands:
+ add  (plus)   Adds N arguments 
+ sub  (minus)  Subtract b from a
+```
+
+3. **Arithmetic command (parent command) help**
+
+```bash
+./cli_craft_examples arithmetic -h
+
+arithmetic - Performs arithmetic operations
+
+Usage: arithmetic [subcommand] [flags] [arguments] 
+
+Aliases:
+ math 
+
+Flags:
+ --help, -h  Show help for command (boolean) 
+
+Available Commands:
+ add  (plus)   Adds N arguments 
+ sub  (minus)  Subtract b from a 
+```
+
+4. **Add command (child command) help**
+
+```bash
+./cli_craft_examples math add -h
+
+add - Adds N arguments
+
+Usage: add [flags] [arguments] 
+
+Aliases:
+ plus 
+
+Flags:
+ --help, -h  Show help for command (boolean) 
+
+```
 
 
 
