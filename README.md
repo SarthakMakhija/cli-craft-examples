@@ -14,7 +14,7 @@ This project is built with Zig version **0.14.1**.
 
 1. **No command provided**
 
-```bash
+```zig
 ./cli_craft_examples
 
 Error: No command was provided to execute.
@@ -31,7 +31,7 @@ Global flags:
 
 2. **No subcommand provided**
 
-```bash
+```zig
 ./cli_craft_examples arithmetic
 
 Error: No subcommand provided for the command 'arithmetic'.
@@ -53,7 +53,7 @@ Available Commands:
 
 3. **Arithmetic command (parent command) help**
 
-```bash
+```zig
 ./cli_craft_examples arithmetic -h
 
 arithmetic - Performs arithmetic operations
@@ -73,7 +73,7 @@ Available Commands:
 
 4. **Add command (child command) help**
 
-```bash
+```zig
 ./cli_craft_examples math add -h
 
 add - Adds N arguments
