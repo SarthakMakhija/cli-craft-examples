@@ -18,14 +18,15 @@ This project is built with Zig version **0.14.1**.
 ./cli_craft_examples
 
 Error: No command was provided to execute.
-Usage: [app-name] [command] [flags] [arguments]
+
+Usage: [app-name] [command] [flags] [arguments] 
 
 Available Commands:
-  arithmetic (math) Performs arithmetic operations
-  help              Displays system help
+ arithmetic  (math)  Performs arithmetic operations 
+ help                Displays system help 
 
 Global flags:
-  --help, -h Show help for command
+ --help, -h  Show help for command 
 ```
 
 2. **No subcommand provided**
