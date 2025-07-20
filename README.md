@@ -17,26 +17,26 @@ This project is built with Zig version **0.14.1**.
 ```zig
 ./cli_craft_examples
 
-Error: No command was provided to execute.
+Error: No command provided to execute.
 
 Usage: [app-name] [command] [flags] [arguments] 
 
 Available Commands:
- arithmetic  (math)  Performs arithmetic operations 
- help                Displays system help 
+ arithmetic  (math)  Perform arithmetic operations 
+ help                Display help for commands 
 
 Global flags:
- --help, -h  Show help for command 
+ --help, -h  Display help for command 
 ```
 
 2. **No subcommand provided**
 
 ```zig
-./cli_craft_examples arithmetic
+/cli_craft_examples arithmetic
 
-Error: No subcommand provided for the command 'arithmetic'.
+Error: No subcommand provided for command 'arithmetic'.
 
-arithmetic - Performs arithmetic operations
+arithmetic - Perform arithmetic operations
 
 Usage: arithmetic [subcommand] [flags] [arguments] 
 
@@ -47,7 +47,7 @@ Flags:
  --help, -h  Show help for command (boolean) 
 
 Available Commands:
- add  (plus)   Adds N arguments 
+ add  (plus)   Add N arguments 
  sub  (minus)  Subtract b from a
 ```
 
@@ -56,7 +56,7 @@ Available Commands:
 ```zig
 ./cli_craft_examples arithmetic -h
 
-arithmetic - Performs arithmetic operations
+arithmetic - Perform arithmetic operations
 
 Usage: arithmetic [subcommand] [flags] [arguments] 
 
@@ -67,7 +67,7 @@ Flags:
  --help, -h  Show help for command (boolean) 
 
 Available Commands:
- add  (plus)   Adds N arguments 
+ add  (plus)   Add N arguments 
  sub  (minus)  Subtract b from a 
 ```
 
@@ -76,7 +76,7 @@ Available Commands:
 ```zig
 ./cli_craft_examples math add -h
 
-add - Adds N arguments
+add - Add N arguments
 
 Usage: add [flags] [arguments] 
 
@@ -85,7 +85,6 @@ Aliases:
 
 Flags:
  --help, -h  Show help for command (boolean) 
-
 ```
 
 
