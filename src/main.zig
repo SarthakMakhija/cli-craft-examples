@@ -21,7 +21,7 @@ pub fn main() !void {
 
     defer cliCraft.deinit();
 
-    var command = try cliCraft.newParentCommand("arithmetic", "Performs arithmetic operations");
+    var command = try cliCraft.newParentCommand("arithmetic", "Perform arithmetic operations");
     try command.setAliases(&[_]CommandAlias{"math"});
 
     try registerSubCommandAdd(cliCraft, &command);
@@ -44,7 +44,7 @@ fn registerSubCommandAdd(cliCraft: CliCraft, command: *Command) !void {
         }
     }.run;
 
-    var subcommand = try cliCraft.newExecutableCommand("add", "Adds N arguments", runnable);
+    var subcommand = try cliCraft.newExecutableCommand("add", "Add N arguments", runnable);
     try subcommand.setAliases(&[_]CommandAlias{"plus"});
 
     try command.addSubcommand(&subcommand);
